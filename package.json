@@ -1,0 +1,27 @@
+{
+  "name": "fonty",
+  "version": "0.1.0",
+  "description": "A library that generates subsetted fonts and web fonts from TTF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "font",
+    "ttf",
+    "woff",
+    "woff2",
+    "eot",
+    "svg"
+  ],
+  "author": "Taegon Kim",
+  "license": "MIT",
+  "dependencies": {
+    "base64-js": "^1.2.0",
+    "fonteditor-core": "^0.0.33",
+    "imagemin-svgo": "^5.2.0",
+    "meow": "^3.7.0",
+    "pako": "^1.0.3",
+    "ttf2woff2": "^2.0.3"
+  }
+}
