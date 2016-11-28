@@ -1,16 +1,15 @@
 {
   "name": "fonty",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A library that generates subsetted fonts and web fonts from TTF",
   "main": "index.js",
+  "bin": {
+    "fonty": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "readme": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/taggon/fonty.git"
-  },
+  "repository": "taggon/fonty",
   "keywords": [
     "font",
     "ttf",
