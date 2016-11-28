@@ -43,6 +43,14 @@ The above code write a console message whenever each file conversion completed.
 
 ### CLI Tool
 
+First, install the tool globally.
+
+```
+$ npm i -g fonty
+```
+
+And just use it:
+
 ```
 $ fonty [options] path/to/source.ttf [path/to/output]
 ```

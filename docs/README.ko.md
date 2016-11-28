@@ -42,6 +42,14 @@ fonty( 'path/to/source.ttf', 'path/to/output', options ).map( promise => {
 
 ### CLI 도구
 
+먼저 전역 영역에 이 도구를 설치하세요.
+
+```
+$ npm i -g fonty
+```
+
+그 뒤 다음과 같이 사용하세요.
+
 ```
 $ fonty [options] path/to/source.ttf [path/to/output]
 ```
