@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taggon/fonty.git"
+  },
   "keywords": [
     "font",
     "ttf",
@@ -16,6 +20,10 @@
   ],
   "author": "Taegon Kim",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taggon/fonty/issues"
+  },
+  "homepage": "https://github.com/taggon/fonty",
   "dependencies": {
     "base64-js": "^1.2.0",
     "fonteditor-core": "^0.0.33",
