@@ -59,7 +59,7 @@ Let's say you have a big list of glyphs in `glyphs.txt` and want to generate `eo
 You can pass the glyph list to `fonty` like this:
 
 ```
-$ text=`cat glyphs.txt` fonty -g="$text" -type="eot,woff" font.ttf
+$ GLYPHS=`cat glyphs.txt` fonty --glyph="$GLYPHS" --type="eot,woff" font.ttf
 ```
 
 You will see more detail help if you just execute `fonty` in the command line.

@@ -21,9 +21,9 @@ const cli = meow(`
       -z, --optimize       optimze output fonts
 
     Examples
-      $ fonty -t "GLYPHS" file.ttf
-      $ fonty -t "GLYPHS" file.ttf output.ttf
-      $ fonty -f ttf,eot,woff2 file.ttf output.ttf
+      $ fonty -g "GLYPHS" file.ttf
+      $ fonty --glyph="GLYPHS" file.ttf output.ttf
+      $ fonty --type="ttf,eot,woff2" file.ttf output.ttf
 `, {
 	boolean: [
 		'base64',
