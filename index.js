@@ -87,14 +87,19 @@ module.exports = function( input, output, options ) {
 		const spaceIndex = ttf.getGlyfIndexByCode(32);
 		if ( spaceIndex !== -1 ) {
 			space = ttf.getGlyfByIndex(spaceIndex);
-			space.contours = [];
-			[ 10, 13 ].forEach( code => {
-				if ( space.unicode.indexOf( code ) === -1 ) {
-					space.unicode.push( code );
-				}
-			});
+			if ( space && space.unicode && space.unicode.indexOf(32) !== -1 ) {
+				space.contours = [];
 
-			ttf.replaceGlyf(space, spaceIndex);
+				[ 10, 13 ].forEach( code => {
+					if ( space.unicode.indexOf(code) === -1 ) {
+						space.unicode.push(code);
+					}
+				} );
+
+				ttf.replaceGlyf(space, spaceIndex);
+			} else {
+				space = null;
+			}
 		}
 	}
 
