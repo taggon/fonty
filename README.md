@@ -1,4 +1,8 @@
-# Fonty : A simple library/CLI tool for generating web fonts
+# Fonty
+
+A simple library/CLI tool for generating web fonts.
+
+## Translations
 
 * [한국어](docs/README.ko.md)
 
